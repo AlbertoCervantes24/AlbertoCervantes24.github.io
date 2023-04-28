@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+@import url("font-awesome.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{}
+
+
+
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:8px; line-height:2px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:10px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:none;}
+#mainav form select option{margin:0px; padding:0; border:none;}
+
+/* Breadcrumb */
+
+
+/* Sidebar Navigation */
+.sidebar nav{display:block; width:100%;}
+.sidebar nav li{margin:0 0 3px 0; padding:0;}
+.sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
+.sidebar nav a::after{top:9px; left:5px; content:"\f101";}
+.sidebar nav ul ul a{padding-left:35px;}
+.sidebar nav ul ul a::after{left:25px;}
+.sidebar nav ul ul ul a{padding-left:55px;}
+.sidebar nav ul ul ul a::after{left:45px;}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{
+	color: #3F3F3F;
+	background-color: inherit;
+}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.9); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{
+	color: #FFFFFF;
+	background-color: #405D6E;
+}
+#mainav form select{color:#FFFFFF; background-color:#000000;}
+
+
+
+.elogo {
+    z-index: 2021;
+    position:relative;
+    margin-top: 0em;
+    padding-left: 8em;
+    }
+
+.row1 {
+    width: 100%;
+    z-index: 1000;
+    background-color:#202020;
+}
+
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:1040px){
+	.hoc{max-width:900px;}
+    .elogo {
+    width: 18em;
+    margin-left: 9em;
+    margin-top: 0em;
+    padding-left: 8em;
+    }
+    
+}
+
+@media screen and (min-width:978px){
+	.hoc{max-width:900px;}
+    
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:50%;}
+     .elogo {
+    width: 18em;
+    margin-left: 9em;
+    margin-top: 0em;
+    padding-left: 8em;
+    }
+
+	#topbar{}
+
+	#header{padding:30px 0 15px;}
+
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+@media screen and (max-width:750px){
+    .row1 {
+        width: 100%;
+    padding-top: 1em;
+    z-index: 1000;
+    background-color:#202020;
+}
+    .elogo {
+    width: 18em;
+    margin-left: 9em;
+    margin-top: 0em;
+    padding-left: 8em;
+    }
+    
+	.imgl, .imgr{display:inline-block; float:right; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:right; padding:9 0 10px 0;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 50px 0; padding:0;}
+
+	#topbar{padding-top:20px; text-align:center;}
+	#topbar ul{margin:0 0 15px 0; line-height:normal;}
+
+	#header{text-align:center;}
+
+
+	.sectiontitle{
+		max-width:500px; 
+		text-align:left;
+		}
+}
+
+
+@media screen and (max-width:450px){
+
+    #mainav form{}
+    #mainav form select{display:block; margin-top:30px; margin-left:0px; color:#FFFFFF; background-color:#000000; font-size:12px; height: 2em;}
+    
+    .row1 {
+    width: 100%;
+    height: 9em;
+    z-index: 1000;
+    background-color:#202020;
+}
+	.sectiontitle{
+		max-width:350px; 
+		text-align:left;
+		}
+    .separator{
+	width: 100%;
+	height:300px;
+}
+
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:350px){
+.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:199 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+
+	#pageintro li article{max-width:none; width:100%;}
+	#pageintro li .heading{font-size:1.6rem;}
+	.sectiontitle{
+		max-width:270px; 
+		text-align:left;
+		}
+	.separator{
+	width: 100%;
+	height:500px;
+}
+	
+
+}
+
+

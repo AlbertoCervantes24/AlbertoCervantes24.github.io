@@ -1,0 +1,188 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    margin-top: -1em;
+    margin-left: -1.1em;
+    position: relative;
+}
+.slideshow-container2 {
+    width: 100%;
+    margin-left: -.68em;
+    position: relative;
+    text-align: center;
+}
+.slideshow-container2 img{
+    width: 50%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  bottom: 450px;
+  width: 100%;
+  text-align: center;
+  -webkit-text-stroke: 1.5px black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2 {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.active2 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5.5s;
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5.5s;
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@-webkit-keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 3500px) {
+.slideshow-container {
+    width: 100%;
+    margin-top: -1em;
+    position: relative;
+}
+    }
+
+
+
+@media only screen and (max-width: 900px) {
+  .slideshow-container {
+    width: 100%;
+    padding-top: 4em;
+    position: relative;
+}
+
+}
+@media only screen and (max-width: 900px) {
+  .slideshow-container2 {
+    width: 100%;
+    padding-top: 4em;
+    margin-left: -.68em;
+    position: relative;
+}
+
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .slideshow-container {
+    width: 100%;
+    padding-top: 5em;
+    margin-left: -.68em;
+    position: relative;
+}
+}
+@media only screen and (max-width: 750px) {
+  .slideshow-container2 {
+    width: 100%;
+    padding-top: 5em;
+    margin-left: -.68em;
+    position: relative;
+}
+}
+
+
+@media only screen and (max-width: 450px) {
+  .slideshow-container {
+    width: 100%;
+    padding-top: 6em;
+    margin-left: -.68em;
+    position: relative;
+}
+}
+@media only screen and (max-width: 450px) {
+  .slideshow-container2 {
+    width: 100%;
+    padding-top: 6em;
+    margin-left: -.68em;
+    position: relative;
+}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px}
+     .slideshow-container {
+    width: 100%;
+    padding-top: 7em;
+    margin-left: -.68em;
+    position: relative;
+    }
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px}
+     .slideshow-container2 {
+    width: 100%;
+    padding-top: 7em;
+    margin-left: -.68em;
+    position: relative;
+    }
+}
+
+

@@ -1,0 +1,342 @@
+
+.iconoListVentajas{
+    margin: 0rem 0.5rem;
+}
+
+.btnInformacion{
+    background: yellow;
+    border: 1px solid yellow;
+    color: black;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btnInformacion:hover{
+    background: none;
+    border: 1px solid yellow;
+    color: black;
+}
+
+
+.btnInformacionCarrusel{
+    background: yellow;
+    border: 1px solid yellow;
+    color: black;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+.btnInformacionCarrusel:hover{
+    background: none;
+    border: 1px solid yellow;
+    color: black;
+}
+
+
+
+.tituloSeccion{
+    color: black;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0rem 2rem;
+    border-bottom: 3px solid yellow;
+    padding: 1rem 0rem;
+}
+
+.tituloSeccion_Servicios{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0rem 4rem;
+    border-bottom: 3px solid yellow;
+    padding: 1rem 0rem;
+}
+
+.tituloSeccion2{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0rem 4rem;
+    border-bottom: 3px solid yellow;
+    padding: 1rem 0rem;
+}
+
+.tituloSeccion3{
+    color: black;
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-bottom: 3px solid yellow;
+    padding: 1rem 0rem;
+}
+
+.listaParrafos{
+    background: yellow; padding: 1rem 1rem; font-size: 1rem;
+}
+
+
+.serviciosTitulo{
+    color: black; 
+    font-size: 1.5rem; 
+    margin: 0rem 0rem;
+}
+
+.textoSeccion{
+    font-size: 1.2rem;
+}
+
+
+.contenedorSeccion{
+    padding: 5rem 0rem;
+}
+
+.contenedorSeccionPiePagina{
+    padding: 5rem 0rem 2rem 0rem;
+}
+
+.bgVision{
+    background: rgb(224, 224, 224);
+}
+
+.bgGuardia{
+    background: white;
+}
+
+.bgResponsabilidad{
+    background: rgb(224, 224, 224);
+}
+
+.bgPiePagina{
+    background: black;
+}
+
+.bgServicios{
+    background: rgb(48, 48, 48)
+}
+
+
+.labelPiePagina{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-right: 3px solid yellow;
+    padding-right: 1rem;
+}
+
+.textoPiePagina{
+    color: white;
+    font-size: 0.8rem;
+    margin: 0px 0px;
+}
+
+.contenedorPiePaginaDerechos{
+    text-align: center;
+}
+
+.textoDerechos{
+    color: white;
+    margin: 0px 0px;
+}
+
+.tituloDerechos{
+    color: white;
+    margin: 0px 0px;
+}
+
+.btnMenuPrincipal{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.btnMenuPrincipal:hover{
+    background: yellow !important;
+    color: black !important;
+}
+
+
+.btnMenuDesplegable{
+    justify-content: right;
+}
+
+.carruselImgCentral{
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img_carrusel_1{
+    background-image: url("../img/img1.jpg");
+}
+
+.img_carrusel_2{
+    background-image: url("../img/img1.jpg");
+}
+
+.img_carrusel_3{
+    background-image: url("../img/img1.jpg");
+}
+
+.contenedorInfoCarrusel{
+    position: absolute;
+    bottom: 100px;
+    right: 15%;
+    left: 15%;
+}
+
+.textoInfo1{
+    color: yellow;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.textoInfo2{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.textoInfo3{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.textoInfoCarrusel{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contenedorServicio{
+    width: 100%; 
+    padding: 1rem 0.5rem; 
+    background: yellow; 
+    text-align: center;
+}
+
+.btnMasInformacionServicio{
+    display: flex;
+    background: yellow;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnMasInformacionServicio a{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 980px) {
+    
+
+    .tituloSeccion{
+        font-size: 1.5rem;
+    }
+    
+    .tituloSeccion_Servicios{
+        font-size: 1.5rem;
+    }
+    
+    .tituloSeccion2{
+        font-size: 1.5rem;
+    }
+    
+    .tituloSeccion3{
+        font-size: 1.5rem;
+    }
+
+    .textoSeccion{
+        font-size: 1rem;
+    }
+
+    .listaParrafos{
+        font-size: 0.6rem;
+    }
+
+    .serviciosTitulo{
+        font-size: 1rem;
+    }
+
+    .contenedorSeccionPiePagina{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 538px) {
+    
+
+    .displayImg{
+        display: none;
+    }
+
+    .contenedorMenu{
+        position: absolute;
+        top: 0;
+    }
+
+    .contenedorMenu2{
+        position: absolute;
+        top: 0;
+    }
+
+    .contenedorMenu ul{
+        position: absolute;
+        top: 0;
+        left: -250px;
+        display: inline-block !important;
+        width: 200px;
+        height: 100vh;
+        background: rgb(228, 228, 228);
+        transform: translateX(0);
+        transition: all 1s ease;
+        z-index: 1000;
+    }
+
+    .contenedorMenu2 ul{
+        position: absolute;
+        top: 0;
+        left: -250px;
+        display: inline-block !important;
+        width: 200px;
+        height: 100vh;
+        background: rgb(228, 228, 228);
+        transform: translate(220px, 0px);
+        transition: all 1s ease;
+        z-index: 1000;
+    }
+
+    .carruselImgCentral{
+        height: 500px;
+    }
+
+    .textoInfo1{
+        font-size: 2rem;
+    }
+    
+    .textoInfo2{
+        font-size: 2rem;
+    }
+    
+    .textoInfo3{
+        font-size: 2rem;
+    }
+    
+    .textoInfoCarrusel{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 538px) {
+    
+
+    .btnMenuDesplegable{
+        display: none;
+    }
+
+}
