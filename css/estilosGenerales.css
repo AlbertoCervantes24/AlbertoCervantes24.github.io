@@ -4,8 +4,8 @@
 }
 
 .btnInformacion{
-    background: yellow;
-    border: 1px solid yellow;
+    background: #e6c000;
+    border: 1px solid #e6c000;
     color: black;
     padding: 1rem 2rem;
     font-weight: bold;
@@ -14,14 +14,14 @@
 
 .btnInformacion:hover{
     background: none;
-    border: 1px solid yellow;
-    color: black;
+    border: 1px solid #e6c000;
+    color: #e6c000;
 }
 
 
 .btnInformacionCarrusel{
-    background: yellow;
-    border: 1px solid yellow;
+    background: #e6c000;
+    border: 1px solid #e6c000;
     color: black;
     padding: 1rem 2rem;
     font-weight: bold;
@@ -29,8 +29,8 @@
 
 .btnInformacionCarrusel:hover{
     background: none;
-    border: 1px solid yellow;
-    color: black;
+    border: 1px solid #e6c000;
+    color: #e6c000;
 }
 
 
@@ -40,7 +40,7 @@
     font-size: 2.6rem;
     font-weight: bold;
     padding: 0rem 2rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #e6c000;
     padding: 1rem 0rem;
 }
 
@@ -49,7 +49,7 @@
     font-size: 2.6rem;
     font-weight: bold;
     padding: 0rem 4rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #e6c000;
     padding: 1rem 0rem;
 }
 
@@ -58,7 +58,7 @@
     font-size: 2.6rem;
     font-weight: bold;
     padding: 0rem 4rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #e6c000;
     padding: 1rem 0rem;
 }
 
@@ -66,12 +66,12 @@
     color: black;
     font-size: 2.6rem;
     font-weight: bold;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #e6c000;
     padding: 1rem 0rem;
 }
 
 .listaParrafos{
-    background: yellow; padding: 1rem 1rem; font-size: 1rem;
+    background: #e6c000; padding: 1rem 1rem; font-size: 1rem;
 }
 
 
@@ -119,7 +119,7 @@
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    border-right: 3px solid yellow;
+    border-right: 3px solid #e6c000;
     padding-right: 1rem;
 }
 
@@ -127,6 +127,11 @@
     color: white;
     font-size: 0.8rem;
     margin: 0px 0px;
+}
+
+.textoRedSocialPiePagina{
+    color: white;
+    font-size: 1.5rem;
 }
 
 .contenedorPiePaginaDerechos{
@@ -149,7 +154,7 @@
 }
 
 .btnMenuPrincipal:hover{
-    background: yellow !important;
+    background: #e6c000 !important;
     color: black !important;
 }
 
@@ -165,17 +170,25 @@
     background-size: cover;
 }
 
+.carruselImgCentral::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 
 .img_carrusel_1{
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img35.png");
 }
 
 .img_carrusel_2{
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img34.png");
 }
 
 .img_carrusel_3{
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img31.png");
 }
 
 .contenedorInfoCarrusel{
@@ -186,7 +199,7 @@
 }
 
 .textoInfo1{
-    color: yellow;
+    color: #e6c000;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -211,13 +224,13 @@
 .contenedorServicio{
     width: 100%; 
     padding: 1rem 0.5rem; 
-    background: yellow; 
+    background: #e6c000; 
     text-align: center;
 }
 
 .btnMasInformacionServicio{
     display: flex;
-    background: yellow;
+    background: #e6c000;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -228,6 +241,34 @@
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+.listaValores{
+    font-size: 1rem;
+}
+
+.textoSegSeccion{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contenedorRedSocial{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icoRedSocial i{
+    padding: 0.5rem 0.5rem;
+    color: white;
+    background: #e6c000;
+}
+
+.textoRedSocial{
+    color: white;
+    margin: 0;
+    padding: 0rem 1rem;
 }
 
 @media only screen and (max-width: 980px) {
@@ -265,6 +306,10 @@
         text-align: center;
     }
 
+    .btnMasInformacionServicio a{
+        font-size: 1.2rem;
+    }
+
 }
 
 @media only screen and (max-width: 538px) {
@@ -291,9 +336,12 @@
         display: inline-block !important;
         width: 200px;
         height: 100vh;
-        background: rgb(228, 228, 228);
+        background: rgb(255, 255, 255);
         transform: translateX(0);
         transition: all 1s ease;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
         z-index: 1000;
     }
 
@@ -304,11 +352,23 @@
         display: inline-block !important;
         width: 200px;
         height: 100vh;
-        background: rgb(228, 228, 228);
+        background: rgb(255, 255, 255);
         transform: translate(220px, 0px);
         transition: all 1s ease;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
         z-index: 1000;
     }
+
+    .contenedorMenu ul li a{
+        border-bottom: 2px solid rgb(241, 241, 241);
+    }
+
+    .contenedorMenu2 ul li a{
+        border-bottom: 2px solid rgb(241, 241, 241);
+    }
+
 
     .carruselImgCentral{
         height: 500px;
@@ -328,6 +388,10 @@
     
     .textoInfoCarrusel{
         font-size: 1rem;
+    }
+
+    .textoRedSocial{
+        font-size: 0.6rem;
     }
 
 }
